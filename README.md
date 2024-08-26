@@ -33,7 +33,7 @@ The application utilizes efficient algorithms for smooth drawing and performance
 
 ## Video Demo
 
-[Insert link to video demo here]
+https://github.com/user-attachments/assets/28bcae13-1783-4000-b42b-d7327271870a
 
 ## Building and Running
 
