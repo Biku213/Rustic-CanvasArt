@@ -93,6 +93,7 @@ impl AppState {
         self.previous_mouse_pos = None;
         self.drawing_mode = DrawingMode::Draw;
         self.save_checkpoint();
+        self.brush_size = 10.0;
     }
 
     pub fn render_sketch(&self, sketch: &Sketch) {
