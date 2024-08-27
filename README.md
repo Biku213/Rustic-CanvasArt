@@ -1,83 +1,84 @@
+
 # Rustic Canvas Art
 
-Rustic Canvas Art is a lightweight, intuitive drawing application built with Rust using the macroquad framework. It offers a simple yet powerful interface for digital sketching and painting.
+Rustic Canvas Art is a lightweight, cross-platform drawing application built with Rust using the Macroquad framework. It provides a simple yet powerful interface for digital sketching, offering a smooth experience even for complex artwork. This tool is perfect for users seeking an easy-to-use digital art creation application.
 
 ## Features
 
-- Intuitive drawing interface with adjustable brush sizes
-- Color palette selection
-- Eraser tool
-- Undo and Redo functionality
-- Save artwork as PNG images
-- Performance monitoring
+- **Intuitive Interface**: Simple and responsive, with adjustable brush sizes.
+- **Color Palette**: Choose from a wide range of colors.
+- **Eraser Tool**: Easily switch between drawing and erasing.
+- **Undo/Redo**: Correct mistakes with ease.
+- **Save as PNG**: Export artwork as PNG images.
+- **Optimized Performance**: Ensures smooth performance even for intricate designs.
 
 ## How It Works
 
-Rustic Canvas Art provides a digital canvas where users can draw freely using their mouse or trackpad. The application uses a state-based architecture to manage the drawing process, user interface, and various tools.
+Rustic Canvas Art provides a canvas for users to create sketches and paintings using their mouse or trackpad. The application includes tools like a brush, eraser, and color selector, allowing for easy and creative art production. Behind the scenes, the app uses a state-based architecture to manage drawing, user interaction, and performance for a responsive drawing experience.
 
-Key components:
+### Key Components:
 
-1. Drawing Engine: Handles sketch creation and rendering
-2. User Interface: Manages toolbar buttons, color selection, and brush size adjustment
-3. File Handling: Allows saving artwork as PNG images
+1. **Drawing Engine**: Handles canvas rendering and drawing inputs.
+2. **User Interface**: Offers a toolbar for color selection, brush adjustment, and file management.
+3. **File Handling**: Facilitates exporting artwork in PNG format.
 
-The application utilizes efficient algorithms for smooth drawing and performance optimization, ensuring a responsive experience even with complex artwork.
+Rustic Canvas Art leverages Rust's efficiency, ensuring fast performance while maintaining simplicity.
 
 ## Why Choose Rustic Canvas Art?
 
-1. **Simplicity**: Clean, intuitive interface for effortless digital sketching
-2. **Performance**: Built with Rust for optimal speed and efficiency
-3. **Customization**: Adjustable brush sizes and color options
-4. **Error Recovery**: Undo/Redo functionality for easy mistake correction
-5. **Cross-platform**: Works on various operating systems
+- **User-Friendly**: Designed for quick and easy use without a steep learning curve.
+- **Fast Performance**: Built with Rust for reliable, efficient performance.
+- **Customizable**: Adjustable brush sizes and colors for creative flexibility.
+- **Undo/Redo**: Allows users to fix mistakes and improve their work.
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
 
 ## Video Demo
 
+Watch this [video demo](https://github.com/user-attachments/assets/28bcae13-1783-4000-b42b-d7327271870a) for a walkthrough of Rustic Canvas Art’s features.
 https://github.com/user-attachments/assets/28bcae13-1783-4000-b42b-d7327271870a
 
-## Building and Running
+## Installation & Setup
 
 ### Prerequisites
 
-- Rust programming language (latest stable version)
-- Cargo package manager
+- Latest stable version of Rust.
+- Cargo package manager.
 
-### Installation
+### Building and Running
 
 1. Clone the repository:
-
-   ```
+   ```bash
    git clone https://github.com/yourusername/rustic-canvas-art.git
    cd rustic-canvas-art
    ```
 
 2. Build the application:
-
-   ```
+   ```bash
    cargo build --release
    ```
 
 3. Run the application:
-   ```
+   ```bash
    cargo run --release
    ```
 
-## Usage
+## Usage Instructions
 
-- Left-click and drag to draw
-- Use the toolbar to:
-  - Select colors
-  - Adjust brush size
-  - Switch between drawing and eraser modes
-  - Undo/Redo actions
-  - Clear the canvas
-  - Save your artwork
+- **Left-click and drag** on the canvas to draw.
+- Use the **toolbar** to:
+  - Select colors.
+  - Adjust brush size.
+  - Switch between drawing and erasing.
+  - Undo/Redo actions.
+  - Clear the canvas.
+  - Save your artwork.
 
-## Keyboard Shortcuts
+### Keyboard Shortcuts
 
-- `Ctrl+Z`: Undo
-- `Ctrl+Y`: Redo
-- `Ctrl+S`: Save artwork
-- `Ctrl+N`: Clear canvas
-- `[`: Decrease brush size
-- `]`: Increase brush size
+- `Ctrl + Z`: Undo.
+- `Ctrl + Y`: Redo.
+- `Ctrl + S`: Save as PNG.
+- `Ctrl + N`: Clear canvas.
+- `[`: Decrease brush size.
+- `]`: Increase brush size.
+
