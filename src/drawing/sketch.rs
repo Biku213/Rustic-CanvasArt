@@ -1,5 +1,6 @@
 use macroquad::prelude::*;
 
+
 // Enum to represent the type of sketch
 #[derive(Clone, PartialEq)]
 pub enum SketchType {
