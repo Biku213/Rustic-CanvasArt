@@ -6,8 +6,9 @@ use crate::app_state::AppState;
 use crate::constants::*;
 use macroquad::prelude::*;
 
-
+// Function to save the current artwork as an image
 pub fn save_image(state: &AppState, default_name: &str) {
+        // Open a file dialog for the user to choose where to save the image
     let file_dialog = FileDialog::new()
         .add_filter("PNG Image", &["png"])
         .set_directory("/")
@@ -32,6 +33,7 @@ pub fn save_image(state: &AppState, default_name: &str) {
     }
 }
 
+// Function to determine the bounding box of the artwork
 fn get_artwork_bounding_box(state: &AppState, canvas_width: u32, canvas_height: u32) -> (u32, u32, u32, u32) {
     let mut min_x = canvas_width;
     let mut min_y = canvas_height;
@@ -69,6 +71,7 @@ fn get_artwork_bounding_box(state: &AppState, canvas_width: u32, canvas_height: 
     (min_x, min_y, max_x - min_x + 1, max_y - min_y + 1)
 }
 
+// Function to create an image buffer from the artwork
 fn create_image_buffer(state: &AppState, bounding_box: &(u32, u32, u32, u32)) -> ImageBuffer<Rgba<u8>, Vec<u8>> {
     let (min_x, min_y, width, height) = *bounding_box;
     
@@ -87,6 +90,7 @@ fn create_image_buffer(state: &AppState, bounding_box: &(u32, u32, u32, u32)) ->
     img_buffer
 }
 
+// Function to draw a sketch on the image buffer
 fn draw_sketch_on_image(img: &mut ImageBuffer<Rgba<u8>, Vec<u8>>, sketch: &crate::drawing::Sketch, min_x: u32, min_y: u32) {
     if sketch.points.len() < 2 {
         return;

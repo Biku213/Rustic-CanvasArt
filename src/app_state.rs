@@ -1,12 +1,14 @@
 use macroquad::prelude::*;
 use crate::drawing::{Sketch, DrawingMode};
 
+// Struct to manage tooltip information
 pub struct Tooltip {
     pub text: String,
     pub position: Vec2,
     pub visible: bool,
 }
 
+// Main struct to hold the application state
 pub struct AppState {
     pub previous_mouse_pos: Option<Vec2>,
     pub artwork: Vec<Sketch>,
@@ -23,6 +25,7 @@ pub struct AppState {
 }
 
 impl AppState {
+        // Constructor for AppState
     pub fn create() -> Self {
         let mut state = AppState {
             drawing_mode: DrawingMode::Draw,
@@ -46,7 +49,8 @@ impl AppState {
         state
     }
 
-    pub fn show_tooltip(&mut self, text: &str, position: Vec2) {
+        // Methods to manage tooltip visibility
+pub fn show_tooltip(&mut self, text: &str, position: Vec2) {
         self.tooltip.text = text.to_string();
         self.tooltip.position = position;
         self.tooltip.visible = true;
@@ -96,7 +100,8 @@ impl AppState {
         self.brush_size = 10.0;
     }
 
-    pub fn render_sketch(&self, sketch: &Sketch) {
+        // Render a single sketch
+pub fn render_sketch(&self, sketch: &Sketch) {
         sketch.render();
     }
 }

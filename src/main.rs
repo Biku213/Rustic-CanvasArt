@@ -76,6 +76,7 @@ fn handle_keyboard_input(state: &mut AppState) {
     }
 }
 
+// Display all artwork on the canvas
 fn display_artwork(state: &AppState) {
     for sketch in &state.artwork {
         state.render_sketch(sketch);
@@ -86,6 +87,7 @@ fn display_artwork(state: &AppState) {
     }
 }
 
+// Display the cursor based on the current drawing mode
 fn display_cursor(state: &AppState, mouse_pos: Vec2) {
     match state.drawing_mode {
         drawing::DrawingMode::Draw => {
@@ -99,6 +101,7 @@ fn display_cursor(state: &AppState, mouse_pos: Vec2) {
     }
 }
 
+// Check if a point is within the canvas boundaries
 fn is_within_canvas(point: Vec2) -> bool {
     point.x > TOOLBAR_WIDTH && 
     point.x < screen_width() - 10.0 && 
