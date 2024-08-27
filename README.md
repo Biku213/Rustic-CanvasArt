@@ -34,7 +34,7 @@ Rustic Canvas Art leverages Rust's efficiency, ensuring fast performance while m
 
 ## Video Demo
 
-Watch this [video demo](https://github.com/user-attachments/assets/28bcae13-1783-4000-b42b-d7327271870a) for a walkthrough of Rustic Canvas Art’s features.
+Watch this video demo for a walkthrough of Rustic Canvas Art’s features.
 https://github.com/user-attachments/assets/28bcae13-1783-4000-b42b-d7327271870a
 
 ## Installation & Setup
